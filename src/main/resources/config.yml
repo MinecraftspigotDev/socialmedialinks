@@ -1,0 +1,11 @@
+#socialmedia:
+#  Store: true
+#  Youtube: True
+#  Twitter: True
+#  Instagram: True
+
+Lang:
+  Store: "&8&l<&2&lSocial&f&lMedia&b&nLink&8&l> &7Your &2Store &7URL &2here &7!"
+  Youtube: "&8&l<&2&lSocial&f&lMedia&b&nLink&8&l> &7Your &2Youtube &7URL &2here &7!"
+  Twitter: "&8&l<&2&lSocial&f&lMedia&b&nLink&8&l> &7Your &2Twitter &7URL &2here &7!"
+  Instagram: "&8&l<&2&lSocial&f&lMedia&b&nLink&8&l> &7Your &2Instagram &7URL &2here &7!"

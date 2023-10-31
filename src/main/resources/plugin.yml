@@ -2,3 +2,6 @@ name: socialmedialinks
 version: '${project.version}'
 main: nl.techjunkyben.hire.socialmedialinks.Socialmedialinks
 authors: [Techjunkyben]
+commands:
+  links:
+    description: sends the urls :)
