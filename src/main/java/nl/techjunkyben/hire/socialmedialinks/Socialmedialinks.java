@@ -42,6 +42,12 @@ public final class Socialmedialinks extends JavaPlugin implements CommandExecuto
         // insta
         String Instagram = getConfig().getString("Lang.Instagram");
         String coloredInstagram = ChatColor.translateAlternateColorCodes('&', Instagram);
+        // discord
+        String Discord = getConfig().getString("Lang.Discord");
+        String coloredDiscord = ChatColor.translateAlternateColorCodes('&', Discord);
+        // discord
+        String Twitch = getConfig().getString("Lang.Twitch");
+        String coloredTwitch = ChatColor.translateAlternateColorCodes('&', Twitch);
 
         List<String> Message = new ArrayList<String>();
 
@@ -56,6 +62,12 @@ public final class Socialmedialinks extends JavaPlugin implements CommandExecuto
         }
         if(getConfig().getBoolean("socialmedia.Instagram")){
             Message.add(coloredInstagram);
+        }
+        if(getConfig().getBoolean("socialmedia.Discord")){
+            Message.add(coloredDiscord);
+        }
+        if(getConfig().getBoolean("socialmedia.Twitch")){
+            Message.add(coloredTwitch);
         }
 
 
