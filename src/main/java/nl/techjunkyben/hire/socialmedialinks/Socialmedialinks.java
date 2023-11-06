@@ -17,6 +17,14 @@ public final class Socialmedialinks extends JavaPlugin implements CommandExecuto
         getConfig().options().copyDefaults();
         saveDefaultConfig();
         getCommand("links").setExecutor(this);
+        //update checker
+        new UpdateChecker(this, 113315).getVersion(version -> {
+            if (this.getDescription().getVersion().equals(version)) {
+                getLogger().info("There is not a new update available.");
+            } else {
+                getLogger().info("There is a new update available.");
+            }
+        });
 
     }
 
@@ -49,7 +57,7 @@ public final class Socialmedialinks extends JavaPlugin implements CommandExecuto
         String Twitch = getConfig().getString("Lang.Twitch");
         String coloredTwitch = ChatColor.translateAlternateColorCodes('&', Twitch);
 
-        List<String> Message = new ArrayList<String>();
+        List<String> Message = new ArrayList<>();
 
         if(getConfig().getBoolean("socialmedia.Store")){
             Message.add(coloredStore);

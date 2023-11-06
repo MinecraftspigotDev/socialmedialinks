@@ -1,5 +1,5 @@
 name: socialmedialinks
-version: '${project.version}'
+version: '2023-11-06'
 main: nl.techjunkyben.hire.socialmedialinks.Socialmedialinks
 authors: [Techjunkyben]
 commands:
